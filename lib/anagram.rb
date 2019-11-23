@@ -14,7 +14,6 @@ class Anagram
 #and instances should respond to a match method that
 #takes an array of possible anagrams.
   def match(array_of_words)
-    binding.pry
     array_of_words.select do |element|
       (@word.split("").sort) == (element.split("").sort)
     end
